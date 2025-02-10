@@ -1,0 +1,135 @@
+/* General styles for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the auth forms */
+.auth-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Headings for the forms */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form elements */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Labels for form elements */
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #fff;
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Link to switch between login and register */
+.auth-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.auth-link span {
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error message styles */
+.input-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 480px) {
+    .auth-container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .auth-link span {
+        font-size: 12px;
+    }
+}

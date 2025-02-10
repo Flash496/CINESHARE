@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CineShare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">CineShare</div>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="#events">Events</a>
+                <a href="profile.html" class="active">Profile</a>
+                <a href="#" id="logout-link">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="profile-info">
+            <div class="profile-avatar"></div>
+            <h1 class="profile-name">Loading...</h1>
+            <p class="profile-bio">Movie enthusiast</p>
+            <button class="edit-profile-btn">Edit Profile</button>
+        </section>
+
+        <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="reviews-tab">Reviews</button>
+            <button class="tab-btn" data-tab="favorites-tab">Favorites</button>
+            <button class="tab-btn" data-tab="ratings-tab">Ratings</button>
+        </div>
+
+        <div id="reviews-tab" class="tab-content">
+            <h2>Your Reviews</h2>
+            <!-- Posts will be dynamically loaded here -->
+        </div>
+
+        <div id="favorites-tab" class="tab-content" style="display: none;">
+            <h2>Your Favorite Movies</h2>
+            <div class="movie-list">
+                <!-- Favorites will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <div id="ratings-tab" class="tab-content" style="display: none;">
+            <h2>Your Ratings</h2>
+            <div class="movie-list">
+                <!-- Ratings will be dynamically loaded here -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

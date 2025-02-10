@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+
+body {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+
+.header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e6e6e6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.main-container {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    gap: 20px;
+}
+
+
+.sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+    color: #1a1a2e;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+    margin-right: 10px;
+}
+
+.post-meta {
+    flex-grow: 1;
+}
+
+.post-author {
+    font-weight: bold;
+}
+
+.post-time {
+    color: #65676b;
+    font-size: 0.9rem;
+}
+
+.post-content {
+    margin-bottom: 15px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    color: #65676b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.events-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.event-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event-time {
+    color: #65676b;
+    font-size: 0.9rem;
+}
+
+
+.create-post {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.post-button {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-button:hover {
+    background-color: #16162a;
+}
+
+
+.profile-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 0 auto 15px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.profile-bio, .profile-stats {
+    color: #65676b;
+    margin-bottom: 15px;
+}
+
+.edit-profile-btn {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.profile-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    height: 40px;
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+    border-bottom-color: #000060e8;
+    font-weight: bold;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.movie-poster {
+    width: 60px;
+    height: 90px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.movie-info {
+    flex-grow: 1;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+
+
+.discover-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    color: #1a1a2e;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster {
+    width: 100%;
+    height: 300px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-info {
+    font-size: 1rem;
+}
+
+.movie-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1a1a2e;
+}
+
+.movie-rating {
+    color: #ffd700;
+    font-size: 0.9rem;
+}
+
+/* Add these styles to your style.css file */
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.delete-post-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.delete-post-btn:hover {
+    background-color: #cc0000;
+}
+
+.post-meta {
+    flex-grow: 1;
+    margin-right: 40px; /* Make space for delete button */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .delete-post-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}

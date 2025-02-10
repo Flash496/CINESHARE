@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineShare - Social Media for Movie Lovers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">CineShare</div>
+            <nav class="nav-links">
+                <a href="home.html" class="active">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="#events">Events</a>
+                <a href="profile.html">Profile</a>
+                <a href="#" id="logout-link">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>Action & Adventure</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Horror</li>
+                <li>Sci-Fi</li>
+                <li>Documentary</li>
+            </ul>
+        </aside>
+
+        <section class="feed">
+            <div class="create-post">
+                <textarea class="post-input" placeholder="Share your thoughts about a movie..."></textarea>
+                <button class="post-button">Post</button>
+            </div>
+            <!-- Posts will be dynamically loaded here -->
+        </section>
+
+        <!-- Right Sidebar - Events -->
+        <aside class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+                <div class="event-title">Classic Movie Night: Casablanca</div>
+                <div class="event-time">Tomorrow, 8:00 PM</div>
+            </div>
+            <div class="event-card">
+                <div class="event-title">Marvel Marathon</div>
+                <div class="event-time">Saturday, 2:00 PM</div>
+            </div>
+            <div class="event-card">
+                <div class="event-title">Oscar Predictions Party</div>
+                <div class="event-time">Sunday, 7:00 PM</div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
